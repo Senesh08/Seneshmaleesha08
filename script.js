@@ -88,7 +88,9 @@ async function validateLogin() {
   } else {
     errorMessage.textContent = 'Invalid username or password';
   }
+  localStorage.setItem('currentUser', JSON.stringify(foundUser));
 }
+
 
 
 function handleLogout(){
