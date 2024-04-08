@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</form></title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post" onsubmit="return validateLogin()">
+        <div class="txt_field">
+          <input type="text" id="username" name="username" required>
+          <span></span>
+          <label for="username">Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="password" name="password" required>
+          <span></span>
+          <label for="password">Password</label>
+        </div>
+        <input type="submit" value="Login">
+      </form>
+      <p id="error-message" align="center"></p>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
+

@@ -1,0 +1,57 @@
+{
+    "section": [
+      {
+        "@class": "subsection1",
+        "img": {
+          "@src": "images/sri-lankan-junglefowl-is-one-of-the-animals-endemic-to-sri-lanka.jpg",
+          "@class": "imagesize"
+        },
+        "div": {
+          "@class": "content",
+          "h2": "Sri Lankan Junglefowl",
+          "br": "",
+          "p": "The Ceylon junglefowl, often called Lafayette's junglefowl or the Sri Lankan junglefowl, is an indigenous bird species found \r\n only in Sri Lanka. It is closely related to the more well-known red junglefowl and serves as the nation's national bird.It is typical to see this bird \r\n in scrub and wooded environments. It may be seen at Yala, Sinharaja, and Kitulgala with ease. It can survive at elevations of up to 2,000 metres \r\n (6,500 feet) above sea level."
+        }
+      },
+      {
+        "@class": "subsection1",
+        "img": {
+          "@src": "images/mugger-crocodile.jpeg",
+          "@class": "imagesize"
+        },
+        "div": {
+          "@class": "content",
+          "h2": "Mugger Crocodile",
+          "br": "",
+          "p": "The second-largest reptile in Sri Lanka is the mugger crocodile. Known by several names such as the mugger or marsh crocodile, this medium-sized crocodilian\r\n species is indigenous to freshwater environments ranging from southern Iran to the Indian subcontinent and Sri Lanka.This crocodile, which can swim \r\n rather well, is found in lakes, rivers, marshes, and man-made ponds. Since 1982, their disappearance has been attributed to a number of factors,\r\n including habitat loss, entrapment in fishing nets, traffic accidents, and confrontation with people."
+        }
+      },
+      {
+        "@class": "subsection1",
+        "img": {
+          "@src": "images/Black Monkey.jpg",
+          "@class": "imagesize"
+        },
+        "div": {
+          "@class": "content",
+          "h2": "Purple-Faced Langur",
+          "br": "",
+          "p": "The purple-faced leaf monkey, or purple-faced langur, is an Old World monkey species that is unique to Sri Lanka. It has a very long tail that it uses \r\n for balance. It is only arboreal.Its population has drastically decreased due to fast urban growth, despite the fact that it was once numerous in\r\n the country's wet zones and the areas around Colombo. This monkey is referred to as the \"Sri Lanka black monkey\" locally."
+        }
+      },
+      {
+        "@class": "subsection1",
+        "img": {
+          "@src": "images/red-slender-loris-appears-in-the-list-of-endangered-animals-in-sri-lanka.jpg",
+          "@class": "imagesize"
+        },
+        "div": {
+          "@class": "content",
+          "h2": "Red Slender Loris",
+          "br": "",
+          "p": "An indigenous tiny primate species of Sri Lanka is the red slender loris. It lives in lowland rainforests at elevations of up to 700 metres \r\n (2,300 feet) and is nocturnal. Masmullah Proposed Forest Reserve is home to one of the last populations of red slender loris.There is very \r\n little information available about this primate, including its population size. This species would rank among the top 5 most vulnerable \r\n primates on the globe if the reported population of just 100 animals is accurate."
+        }
+      }
+    ]
+  }
+    

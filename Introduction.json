@@ -1,0 +1,48 @@
+{
+    "section": [
+      {
+        "@class": "subsection1",
+        "img": {
+          "@src": "images/The_Common_Wanderer_-0508.jpg",
+          "@class": "imagesize"
+        },
+        "div": {
+          "@class": "content",
+          "h2": "Udawalawa National Park",
+          "br": "",
+          "p": "With an area of 308.2 km², Udawalawe National Park is one of Sri Lanka's smallest national parks. More than 500 elephants are thought to reside in this \r\n area.A wide variety of other animals, including as water buffalo, sloth bears and spotted deer can \r\n be found in Udawalawe. ",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.370762013695!2d80.87374407585479!3d6.474634123727531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae408ff88887e79%3A0xaf12e79ffbd980d7!2sUdawalawe%20National%20Park!5e0!3m2!1sen!2slk!4v1702389806261!5m2!1sen!2slk" 
+        }
+      },
+      {
+        "@class": "subsection1",
+        "img": {
+          "@src": "images/site_0405_0001-1200-630-20150608104702.jpg",
+          "@class": "imagesize"
+        },
+        "div": {
+          "@class": "content",
+          "h2": "Sinharaja Rain Forest",
+          "br": "",
+          "p": "The Sinharaja Forest Reserve is a UNESCO World Heritage Site.Numerous plant andanimal species, many of which are peculiar to Sri Lanka, can be found \r\n in the reserve. The Sri Lankan elephant, leopard, purple-faced langur and a variety of birds including \r\n the Sri Lanka blue magpie and Sri Lanka spurfowl are among the most famous species that can be found in the reserve. The conservation \r\n area gives visitors not just a wealth of species but also the chance to take in the splendour of a tropical rainforest, complete with lush greenery \r\n and beautiful waterfalls.",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.901270984547!2d80.45894144472369!3d6.400362586355507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1702389953978!5m2!1sen!2slk" 
+        }
+      },
+      {
+        "@class": "subsection1",
+        "img": {
+          "@src": "images/horton-plains-national.jpg",
+          "@class": "imagesize"
+        },
+        "div": {
+          "@class": "content",
+          "h2": "Hortan Plains National Park",
+          "br": "",
+          "p": "The most significant location for the catchment of almost all major rivers in SriLanka is Horton Plains, together with the surrounding forests and the \r\n Peak Wilderness. The majority of the unique plant and animal species that are unique to the wet and \r\n montane zones of the nation can be found on the Horton plains, which are renowned for their exceptional visual splendour.",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.673994732994!2d80.79746238494445!3d6.809451302227006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1702390123256!5m2!1sen!2slk"
+        }
+      }
+    ]
+  }
+    
+  

@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: white;
+    color: #36455c;
+}
+li a{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #36455c;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 10%;
+    background-color: white;
+}
+.navstyle{
+    list-style: none;
+}
+.navstyle li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+ul li ul.dropdown li{
+    display: block;
+    background: white;
+    margin: 25px 25px;
+}
+ul li ul.dropdown{
+    width:auto;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: turquoise;
+
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.yala-image{
+    background-image: url(images/Yala-Sunset.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yala-text{
+    font-size: 50px;
+    color: white;
+}
+@keyframes slideinleft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.slideinleft{
+    animation: slideinleft 1s ease-in;
+}
+.subsection1{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    animation: slideinleft 1s ease-in;
+}
+.content{
+    padding:35px;
+    animation: slideinleft 1s ease-in;
+}
+.content h2{
+    color: #36455c;
+    font-size: 32px;
+    margin: 15px 0px;
+}
+.content p{
+    color: #666;
+    font-size: 17.5px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+@media(max-width: 768px){
+    .subsection{
+        flex-direction: column;
+    }
+    .content{
+        flex: 10 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+    .navstyle li{
+        float: none;
+        display: block;
+    }
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: beige;
+}
+.box{
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #36455c;
+    width: 200px;
+    height: 145px;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.box :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.copyright{
+    margin-inline-start: auto;
+    background-color: #36455c;
+    color: white;
+    text-align: center;
+}

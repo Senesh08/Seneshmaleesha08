@@ -1,0 +1,45 @@
+{
+  "section": [
+    {
+      "@class": "subsection1",
+      "img": {
+        "@src": "images/Yala-National-Park-Entrance-1024x768.webp",
+        "@class": "imagesize"
+      },
+      "div": {
+        "@class": "content",
+        "h2": "Yala National Park",
+        "br": "",
+        "p": "Yala national park is the well-known area to see leopards in the Sri Lanka.One of the seeing a stunning cat strolling over the wide plains.In addition to \r\n learn more about these leopards, visitors may try safari rides conducted by experienced guides.The best way to see the park and improve chances of \r\n seeing a leopard are on a jeep safarai."
+      }
+    },
+    {
+      "@class": "subsection1",
+      "img": {
+        "@src": "images/21b6e17ab9a66993e25e3e7f5eda06df.jpg",
+        "@class": "imagesize"
+      },
+      "div": {
+        "@class": "content",
+        "h2": "Wilpattu National Park",
+        "br": "",
+        "p": "Wilpattu is located on North Western province and wilpattu is denser with dark forests and there are few open areas that are often made up of naturlly \r\n formed lakes called villus.Sometimes it might be hard to find leopards in the deep,dark forest."
+      }
+    },
+    {
+      "@class": "subsection1",
+      "img": {
+        "@src": "images/Kumana-National-Park.jpg",
+        "@class": "imagesize"
+      },
+      "div": {
+        "@class": "content",
+        "h2": "Kumana National Park",
+        "br": "",
+        "p": "Kumana National Park is located on Eastern province and kumana and yala has the same environment.However there have been more and more sightings \r\n of leopards in the kumana national park during the past years."
+      }
+    }
+  ]
+}
+  
+  

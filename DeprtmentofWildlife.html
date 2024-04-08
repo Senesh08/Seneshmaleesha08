@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <title>Wildlife in Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <h3>WildLife in Sri Lanka</h3>
+        <nav>
+            <ul class="navstyle">
+                <li><a href="Index.html"><b>Home</b></a></li>
+                <li><a href="Introduction.html"><b>Introduction</b></a></li>
+                <li><a href="DeprtmentofWildlife.html"><b>Deaprtment of Wildlife</b></a></li>
+                <li><a href="SriLankanLeopard.html"><b>Sri Lankan Leopard</b></a></li>
+                <li>
+                    <a href="AnimalsinSriLanka.html"><b>Animals in Sri Lanka  ▾</b></a>
+                    <ul class="dropdown">
+                        <li><a href="YalaNationalPark.html"><b>Yala National Park</b></a></li>
+                        <li><a href="WilpattuNationalPark.html"><b>Wilpattu National Park</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <div class="department-of-wildlife"></div> -->
+    <div class="subsection5"></div>
+    <section class="subsection5"></section>
+    <!-- <section class="subsection1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44812.426871809126!2d79.86983019694348!3d6.902995506377244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1704616228390!5m2!1sen!2slk" width="500" height="300" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="content">
+            <h2>Department of Wildlife Conservation</h2><br>
+            <p>The Department of Wildlife Conservation is the government office responsible for managing and protecting Sri Lankan 
+                wildlife.DWC plays major role in conserving by rare plants, animals, corals and wide variety of birds and exclusive
+                leopards and elephants.</p>
+        </div>
+    </section> -->
+    <section class="fbox">
+        <div class="introduction">
+            <h1>Protected Areas</h1><br><br><br><br>
+            <div class="flexbox">
+                <div class="flexbox-container">
+                    <img src="images/Sinharaja_Rain_Forest.jpg"><br><br>
+                    <h3>Sinharaja Rain Forest</h3>
+                </div>
+                <div class="flexbox-container">
+                    <img src="images/minneriya-national-park.jpg"><br><br>
+                    <h3>Minneriya National Park</h3>
+                </div>
+                <div class="flexbox-container">
+                    <img src="images/Udawalawe_National_Park_(Udawalawa_Reservoir).jpg"><br><br>
+                    <h3>Udawalawa National Park</h3>
+                </div>
+                <div class="flexbox-container">
+                    <img src="images/140958692Nuwara_Eliya_Harton_Plains.jpg"><br><br>
+                    <h3>Hortan Plains</h3>
+                </div>
+                <div class="flexbox-container">
+                    <img src="images/Madhuruoya-Sanctuary-1-700x500.jpg"><br><br>
+                    <h3>Maduru Oya National Park</h3>
+                </div>
+                <div class="flexbox-container">
+                    <img src="images/Gal_Oya_National_Park_(Senanayake_Samudhraya).jpeg"><br><br>
+                    <h3>Gal Oya National Park</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="script1.js"></script>
+    <script src="departmentedit.js"></script>
+    <script>
+        
+        function updateDepartmentofWildlifeHTML(data) {
+            
+            const htmlContent = data.section.map(section => `
+                <section class="${section["@class"]}">
+                    <div class="${section.div["@class"]}">
+                        <h2>${section.div.h2}</h2>
+                        <p>${section.div.p.replace(/\r\n/g, "<br>")}</p>
+                        <iframe src="${section.iframe}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            `).join('');
+
+            
+            const departmentOfWildlifeContainer = document.querySelector('.subsection5');
+            departmentOfWildlifeContainer.innerHTML = htmlContent;
+        }
+
+        
+        const data = JSON.parse(localStorage.getItem('Department.json'));
+        if (data) {
+            
+            updateDepartmentofWildlifeHTML(data);
+        }
+    </script> 
+    <!--<footer>
+        <div class="copyright">
+            <p>@Copyright 2024 All Right Reserved</p>
+        </div>
+    </footer>-->
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>Wildlife in Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h3>WildLife in Sri Lanka</h3>
+        <nav>
+            <ul class="navstyle">
+                <li><a href="Index.html"><b>Home</b></a></li>
+                <li><a href="Introduction.html"><b>Introduction</b></a></li>
+                <li><a href="DeprtmentofWildlife.html"><b>Deaprtment of Wildlife</b></a></li>
+                <li><a href="SriLankanLeopard.html"><b>Sri Lankan Leopard</b></a></li>
+                <li>
+                    <a href="AnimalsinSriLanka.html"><b>Animals in Sri Lanka  ▾</b></a>
+                    <ul class="dropdown">
+                        <li><a href="YalaNationalPark.html"><b>Yala National Park</b></a></li>
+                        <li><a href="WilpattuNationalPark.html"><b>Wilpattu National Park</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <div class="leopard-image">
+            <div class="leopard-text">
+                <h1>SRI LANKAN LEOPARD</h1>
+            </div>
+        </div>
+        <h1 class="heading">Places to see Leopard in SriLanka</h1>
+        <section class="subsection3"></section> 
+        <!-- <section class="subsection1">
+            <img src="images/Yala-National-Park-Entrance-1024x768.webp" class="imagesize">
+            <div class="content">
+                <h2>Yala National Park</h2><br>
+                <p>Yala national park is the well-known area to see leopards in the Sri Lanka.One of the seeing a stunning cat strolling over 
+                    the wide plains.In addition to learn more about these leopards, visitors may try safari rides conducted by experienced 
+                    guides.The best way to see the park and improve chances of seeing a leopard are on a jeep safarai.</p>
+            </div>
+        </section> 
+        <section class="subsection1">
+            <img src="images/21b6e17ab9a66993e25e3e7f5eda06df.jpg" class="imagesize">
+            <div class="content">
+                <h2>Wilpattu National Park</h2><br>
+                <p>Wilpattu is located on North Western province and wilpattu is denser with dark forests and there are few open areas that 
+                    are often made up of naturlly formed lakes called villus.Sometimes it might be hard to find leopards in the deep,dark forest.</p>
+            </div>
+        </section>
+        <section class="subsection1">
+            <img src="images/Kumana-National-Park.jpg" class="imagesize">
+            <div class="content">
+                <h2>Kumana National Park</h2><br>
+                <p>Kumana National Park is located on Eastern province and kumana and yala has the same environment.However there 
+                    have been more and more sightings of leopards in the kumana national park during the past years.</p>
+            </div><br>
+        </section><br>  -->
+        <footer>
+            <div class="copyright">
+                <p>@Copyright 2024 All Right Reserved</p>
+            </div>
+            <!--1.https://www.srilankainstyle.com/blog/spotting-the-sri-lankan-leopard#:~:text=Yala%20National%20Park%20is%20known,season%20from%20December%20to%20March.
+                2.Nicholas, S. (2023) Where to see leopards in Sri Lanka. https://travellersisle.com/where-to-see-leopards-in-sri-lanka/.-->
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            
+            function updateSriLankanLeopardHTML(data) {
+                
+                const htmlContent = data.section.map(section => `
+                    <section class="${section["@class"]}">
+                        <img src="${section.img["@src"]}" class="${section.img["@class"]}">
+                        <div class="${section.div["@class"]}">
+                            <h2>${section.div.h2}</h2>
+                            <p>${section.div.p.replace(/\r\n/g, "<br>")}</p>
+                        </div>
+                    </section>
+                `).join('');
+    
+                
+                const animalsinSriLankaContainer = document.querySelector('.subsection3');
+                animalsinSriLankaContainer.innerHTML = htmlContent;
+            }
+    
+            
+            const data = JSON.parse(localStorage.getItem('LeopardData'));
+            if (data) {
+                
+                updateSriLankanLeopardHTML(data);
+            }
+        </script>
+    </body>
+    </html>
+
+
+
+    
+    

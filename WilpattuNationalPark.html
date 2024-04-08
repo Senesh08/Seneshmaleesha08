@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <title>Wildlife in Sri Lanka</title>
+    <link rel="stylesheet" href="Wilpattu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h3>WildLife in Sri Lanka</h3>
+        <nav>
+            <ul class="navstyle">
+                <li><a href="Index.html"><b>Home</b></a></li>
+                <li><a href="Introduction.html"><b>Introduction</b></a></li>
+                <li><a href="DeprtmentofWildlife.html"><b>Deaprtment of Wildlife</b></a></li>
+                <li><a href="SriLankanLeopard.html"><b>Sri Lankan Leopard</b></a></li>
+                <li>
+                    <a href="AnimalsinSriLanka.html"><b>Animals in Sri Lanka  ▾</b></a>
+                    <ul class="dropdown">
+                        <li><a href="YalaNationalPark.html"><b>Yala National Park</b></a></li>
+                        <li><a href="WilpattuNationalPark.html"><b>Wilpattu National Park</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wilpattu-image">
+        <div class="wilpattu-text">
+            <h1 class="slideinleft">Wilpattu National Park</h1>
+        </div>
+    </div>
+    <section class="subsection6"></section>
+    <!-- <section class="subsection1">
+        <div class="content">
+            <h2>Wilpattu National Park</h2><br>
+            <p>Discover the most elusive fauna in Sri Lanka amid the immense solitude of Wilpattu National Park. This is Sri Lanka's largest and oldest 
+                wildlife reserve, taking up a wide tract of territory that borders the ancient ruins of the Cultural Triangle, the Northern Province, and
+                 the copper-sand beaches of the country's west coast. The park supports an amazing bird life, Asian Elephants, Sri Lankan Leopards, and 
+                 Sri Lankan Sloth Bears, among many other indigenous species.Although Wilpattu was originally established in 1905 as a wildlife refuge, 
+                 this 13,500-hectare park did not get national park status until February 1938.</p>
+        </div>
+    </section>
+    <section class="subsection3">
+        <div class="content1">
+            <h2>Topography of Wilpattu</h2><br>
+            <p>'Willu' and 'pattu' broadly translate as the Land of the Lakes, and this is exactly what defines this beautiful reserve. In among the lowland 
+                forest, open scrubland and thick jungle lie up to 60 'villus' - natural, shallow rainwater-collecting basins, which expand and contract with 
+                the seasons. Wildlife is drawn to these pristine waterholes and the lush grassy banks that surround them, which makes them prime spots for wildlife 
+                spotting throughout the year.</p>
+        </div>
+    </section>
+    <section class="subsection1">
+        <div class="content">
+            <h2>What Wildlife Can You See In Wilpattu?</h2><br>
+            <p>Wilpattu National Park is home to Sri Lanka's most exciting, longed-to-see wildlife. These include the elusive Sri Lankan leopard, the Asian 
+                Elephant and the Sri Lankan Sloth Bear alongside a supporting cast of spotted and sambar deer, crocodiles, mongooses and water buffalo. 
+                Leopard sightings are amongst the best in the country despite the reserve having a much less dense leopard population than Yala National Park.
+                 The aquatic features of the park also make this one of Sri Lanka's best places for bird watching - some of the endemics include the Ceylon grey
+                  hornbill, the Ceylon Prakeet and the Red-backed woodpecker. You may also spy the brownish chicken-like Sri Lankan Jungle fowl, Sri Lanka's national bird.</p>
+        </div>
+    </section> -->
+    <div class="container">
+        <div class="box">
+            <img src="images/Yala-National-Park-10.jpg">
+        </div>
+        <div class="box">
+            <img src="images/YalaNatgallery1.webp">
+        </div>
+        <div class="box">
+            <img src="images/images (1).jpeg">
+        </div>
+        <div class="box">
+            <img src="images/istockphoto-534789901-612x612.jpg">
+        </div>
+        <div class="box">
+            <img src="images/yalla.jpg">
+        </div>
+    </div><br>
+    <footer>
+        <div class="copyright">
+            <p>@Copyright 2024 All Right Reserved</p>
+        </div>
+        <!--Wilpattu National Park (2020) Wilpattu National Park. https://www.dwc.gov.lk/wnp/.-->
+    </footer>
+    <script src="script1.js"></script>
+    <script>
+        
+        function updateWilpattuNationalParkHTML(data) {
+            
+            const htmlContent = data.section.map(section => `
+                <section class="${section["@class"]}">
+                    
+                    <div class="${section.div["@class"]}">
+                        <h2>${section.div.h2}</h2>
+                        <p>${section.div.p.replace(/\r\n/g, "<br>")}</p>
+                    </div>
+                </section>
+            `).join('');
+
+            
+            const animalsinSriLankaContainer = document.querySelector('.subsection6');
+            animalsinSriLankaContainer.innerHTML = htmlContent;
+        }
+
+        
+        const data = JSON.parse(localStorage.getItem('WilpattuData'));
+        if (data) {
+            
+            updateWilpattuNationalParkHTML(data);
+        }
+    </script>
+</body>
+</html>
+    

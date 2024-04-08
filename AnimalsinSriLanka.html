@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>Wildlife in Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h3>WildLife in Sri Lanka</h3>
+        <nav>
+            <ul class="navstyle">
+                <li><a href="Index.html"><b>Home</b></a></li>
+                <li><a href="Introduction.html"><b>Introduction</b></a></li>
+                <li><a href="DeprtmentofWildlife.html"><b>Deaprtment of Wildlife</b></a></li>
+                <li><a href="SriLankanLeopard.html"><b>Sri Lankan Leopard</b></a></li>
+                <li>
+                    <a href="AnimalsinSriLanka.html"><b>Animals in Sri Lanka  ▾</b></a>
+                    <ul class="dropdown">
+                        <li><a href="YalaNationalPark.html"><b>Yala National Park</b></a></li>
+                        <li><a href="WilpattuNationalPark.html"><b>Wilpattu National Park</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="heading">Indigenous Animals In Sri Lanka</h1>
+    <!-- <section class="subsection1">
+        <img src="">
+        <div class="content">
+            <h2>
+                <p></p>
+            </h2>
+        </div>
+    </section> -->
+    <section class="subsection2"></section> 
+    
+    
+    <!-- <section class="subsection1">
+        <img src="images/sri-lankan-junglefowl-is-one-of-the-animals-endemic-to-sri-lanka.jpg" class="imagesize">
+        <div class="content">
+            <h2>Sri Lankan Junglefowl</h2><br>
+            <p>The Ceylon junglefowl, often called Lafayette's junglefowl or the Sri Lankan junglefowl, is an indigenous bird species found 
+                only in Sri Lanka. It is closely related to the more well-known red junglefowl and serves as the nation's national bird.It is typical to see this bird 
+                in scrub and wooded environments. It may be seen at Yala, Sinharaja, and Kitulgala with ease. It can survive at elevations of up to 2,000 metres 
+                (6,500 feet) above sea level.</p>
+        </div>
+    </section>
+    <section class="subsection1">
+        <img src="images/mugger-crocodile.jpeg" class="imagesize">
+        <div class="content">
+            <h2>Mugger Crocodile</h2><br>
+            <p>The second-largest reptile in Sri Lanka is the mugger crocodile. Known by several names such as the mugger or marsh crocodile, this medium-sized crocodilian
+                 species is indigenous to freshwater environments ranging from southern Iran to the Indian subcontinent and Sri Lanka.This crocodile, which can swim 
+                 rather well, is found in lakes, rivers, marshes, and man-made ponds. Since 1982, their disappearance has been attributed to a number of factors,
+                  including habitat loss, entrapment in fishing nets, traffic accidents, and confrontation with people.
+                </p>
+        </div>
+    </section>
+    <section class="subsection1">
+        <img src="images/Black Monkey.jpg" class="imagesize">
+        <div class="content">
+            <h2>Purple-Faced Langur</h2><br>
+            <p>The purple-faced leaf monkey, or purple-faced langur, is an Old World monkey species that is unique to Sri Lanka. It has a very long tail that it uses 
+                for balance. It is only arboreal.Its population has drastically decreased due to fast urban growth, despite the fact that it was once numerous in
+                 the country's wet zones and the areas around Colombo. This monkey is referred to as the "Sri Lanka black monkey" locally.</p>
+        </div>
+    </section>
+    <section class="subsection1">
+        <img src="images/red-slender-loris-appears-in-the-list-of-endangered-animals-in-sri-lanka.jpg" class="imagesize">
+        <div class="content">
+            <h2>Red Slender Loris</h2><br>
+            <p>An indigenous tiny primate species of Sri Lanka is the red slender loris. It lives in lowland rainforests at elevations of up to 700 metres 
+                (2,300 feet) and is nocturnal. Masmullah Proposed Forest Reserve is home to one of the last populations of red slender loris.There is very 
+                little information available about this primate, including its population size. This species would rank among the top 5 most vulnerable 
+                primates on the globe if the reported population of just 100 animals is accurate.</p>
+        </div>
+    </section> -->
+    <section class="subsection1">
+        <img src="images/sri-lankan-sloth-bear-is-among-the-indigenous-animals-in-sri-lanka.jpg" class="imagesize">
+        <div class="content">
+            <h2>Sri Lankan Sloth Bear</h2><br>
+            <p>Another big animal found in the nation is the Sri Lankan sloth bear, which coexists with the Sri Lankan leopard for the most part of its habitat.
+                 It is an omnivore bear that lives in lowland dry woods and eats flesh and carrion in addition to berries, roots, and nuts.With less than 1,000 
+                 specimens remaining (and a wild population of roughly 500), this bear is very vulnerable. The primary causes of that include habitat degradation
+                  (this bear heavily depends on natural forests for food supplies), persecution following livestock losses, property damage, and assaults on people.
+                   It is therefore feared in Sri Lanka.</p>
+        </div><br>
+    </section><br>
+    <footer>
+        <div class="copyright">
+            <p>@Copyright 2024 All Right Reserved</p>
+        </div>
+        <!--1.Endemic animals of Sri Lanka (no date). https://www.animalia.bio/endemic-lists/country/endemic-animals-of-sri-lanka.-->
+    </footer>
+    <script src="script1.js"></script>
+    <script>
+        
+        function updateAnimalsinSriLankaHTML(data) {
+            
+            const htmlContent = data.section.map(section => `
+                <section class="${section["@class"]}">
+                    <img src="${section.img["@src"]}" class="${section.img["@class"]}">
+                    <div class="${section.div["@class"]}">
+                        <h2>${section.div.h2}</h2>
+                        <p>${section.div.p.replace(/\r\n/g, "<br>")}</p>
+                    </div>
+                </section>
+            `).join('');
+
+            
+            const animalsinSriLankaContainer = document.querySelector('.subsection2');
+            animalsinSriLankaContainer.innerHTML = htmlContent;
+        }
+
+        
+        const data = JSON.parse(localStorage.getItem('animalData'));
+        if (data) {
+            
+            updateAnimalsinSriLankaHTML(data);
+        }
+    </script> 
+</body>
+</html>
+
+
+

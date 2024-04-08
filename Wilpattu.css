@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: white;
+    color: #36455c;
+}
+li a{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #36455c;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 10%;
+    background-color: white;
+}
+.navstyle{
+    list-style: none;
+}
+.navstyle li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+ul li ul.dropdown li{
+    display: block;
+    background: white;
+    margin: 25px 25px;
+}
+ul li ul.dropdown{
+    width:auto;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: turquoise;
+
+}
+ul li:hover ul.dropdown{
+    display: block;
+}*/
+.subsection1{
+    display: flex;
+    margin-left: 500px;
+    padding-top: 70px;
+    width: 50%;
+    animation: slideinleft 1s ease-in;
+    padding-left: 100px;
+}
+.subsection2{
+    display: flex;
+    /*margin-left: 400px;*/
+    padding-top: 30px;
+    width: 70%;
+    animation: slideinleft 1s ease-in;
+}
+.content{
+    padding:35px;
+    animation: slideinleft 1s ease-in;
+}
+.content h2{
+    color: #36455c;
+    font-size: 32px;
+    margin: 15px 0px;
+}
+.content p{
+    color: #666;
+    font-size: 17.5px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+@media(max-width: 768px){
+    .subsection1{
+        flex-direction: column;
+    }
+    .content{
+        flex: 10 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+    .navstyle li{
+        float: none;
+        display: block;
+    }
+}
+@media(max-width: 768px){
+    .subsection2{
+        flex-direction: column;
+    }
+    .content{
+        flex: 10 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+@keyframes slideinleft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.slideinleft{
+    animation: slideinleft 1s ease-in;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: lightblue;
+}
+.box{
+    margin: 18px;
+    padding: 17px;
+    border: 3px solid #36455c;
+    width: 400px;
+    height: 300px;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.box :hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.wilpattu-image{
+    background-image: url(images/WilpattuNationalPark-April2014_\(3\).jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wilpattu-text{
+    font-size: 50px;
+    color: white;
+}
+.content1{
+    /*padding:35px;*/
+    animation: slideinleft 1s ease-in;
+    text-align: right;
+}
+.content1 h2{
+    color: #36455c;
+    font-size: 32px;
+    /*margin: 15px 0px;*/
+}
+.content1 p{
+    color: #666;
+    font-size: 17.5px;
+    line-height: 1.5;
+    /*margin: 15px 0px;*/
+}
+.subsection3{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    animation: slideinleft 1s ease-in;
+}
+.copyright{
+    margin-inline-start: auto;
+    background-color: #36455c;
+    color: white;
+    text-align: center;
+}
